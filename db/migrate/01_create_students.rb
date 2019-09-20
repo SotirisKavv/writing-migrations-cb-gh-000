@@ -8,7 +8,7 @@ class CreateStudents < ActiveRecord::Migration[5.1]
     SQL
     ActiveRecord::Base.connection.execute(sql)
 
-    create_table :artist do |t|
+    create_table :student do |t|
       t.string :name
     end
   end
