@@ -6,7 +6,8 @@ class CreateStudents < ActiveRecord::Migration[5.1]
       name TEXT
     )
     SQL
-
+    ActiveRecord::Base.connection.execute(sql)
+    
     create_table :artist do |t|
       t.string :name
     end
